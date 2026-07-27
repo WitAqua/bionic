@@ -62,7 +62,7 @@ static const PrefixEntry kDirParents[] = {
 
 static const PrefixEntry kProcFilterKeywords[] = {
     PE("lineage"), PE("Lineage"), PE("voltage"), PE("VoltageOS"),
-    PE("omnirom"), PE("aospa"),
+    PE("omnirom"), PE("aospa"), PE("witaqua"),
     { nullptr, 0 }
 };
 
@@ -71,7 +71,7 @@ static const char* const kMountFilterKeywords[] = {
 };
 
 static const char* const kAllowlistedPackages[] = {
-    "com.voltageos.updater",
+    "org.lineageos.updater",
     nullptr
 };
 
@@ -720,7 +720,7 @@ int custom_rom_hide_filter_vintf(const char* path) {
 
 static const char* const kSpoofedEmptyProps[] = {
     "ro.voltage.version", "ro.lineage.version", "ro.lineage.build.version", "org.voltage.version",
-    "ro.modversion", "init.svc_debug_pid.adb_root",
+    "ro.witaqua.build.version", "ro.modversion", "init.svc_debug_pid.adb_root",
     "init.svc.adb_root", "service.adb.root", nullptr
 };
 
